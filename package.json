@@ -1,0 +1,36 @@
+{
+  "name": "eslint-config-nestjs",
+  "version": "1.0.0",
+  "description": "The eslint config for nest.js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": {
+    "name": "James Tan",
+    "email": "james.hobby.tan@gmail.com"
+  },
+  "private": false,
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "styleguide"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.57.1",
+    "@typescript-eslint/parser": "5.57.1",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-no-relative-import-paths": "1.5.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0"
+  },
+  "peerDependencies": {
+    "eslint": "8.37.0"
+  }
+}

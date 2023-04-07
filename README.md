@@ -5,13 +5,13 @@
 With `yarn`:
 
 ```bash
-yarn add -D @geekmini/eslint-config-nestjs
+yarn add -D @future.ai/eslint-config-nestjs
 ```
 
 With `npm`:
 
 ```bash
-npm i -D @geekmini/eslint-config-nestjs
+npm i -D @future.ai/eslint-config-nestjs
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Create `.eslintrc.js` file:
 ```js
 module.exports = {
   "extends": [
-    "@sotream/eslint-config-nestjs"
+    "@future.ai/eslint-config-nestjs"
   ],
   "rules": {
       // overrides ...
@@ -29,7 +29,7 @@ module.exports = {
 }
 ```
 
-## Auto Format on File Save
+## Non-Relative Path
 in `.vscode/settings.json`
 ```json
 {
@@ -37,10 +37,28 @@ in `.vscode/settings.json`
         "javascript",
         "typescript"
     ],
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
     "javascript.preferences.importModuleSpecifier": "non-relative",
     "typescript.preferences.importModuleSpecifier": "non-relative",
 }
+```
+in `tsconfig.json`
+```json
+{
+    "compilerOptions": {
+        "paths": {
+            "@core/*": ["src/*"]
+        }
+    }
+}
 ``` 
+
+
+## Format on Save
+in `.vscode/settings.json`
+```json
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
+```

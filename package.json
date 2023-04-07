@@ -1,15 +1,12 @@
 {
-  "name": "eslint-config-nestjs",
+  "name": "@future.ai/eslint-config-nestjs",
   "version": "1.0.0",
   "description": "The eslint config for nest.js project",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
-  "author": {
-    "name": "James Tan",
-    "email": "james.hobby.tan@gmail.com"
-  },
+  "author": "James Tan <james.hobby.tan@gmail.com>",
   "private": false,
   "license": "MIT",
   "keywords": [

@@ -1,6 +1,6 @@
 {
   "name": "@future.ai/eslint-config-nestjs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The eslint config for nest.js project",
   "main": "index.js",
   "scripts": {

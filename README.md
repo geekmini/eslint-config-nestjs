@@ -30,7 +30,7 @@ module.exports = {
 ```
 
 ## Non-Relative Path
-in `.vscode/settings.json`
+config vscode in `.vscode/settings.json`
 ```json
 {
     "eslint.validate": [
@@ -41,7 +41,7 @@ in `.vscode/settings.json`
     "typescript.preferences.importModuleSpecifier": "non-relative",
 }
 ```
-in `tsconfig.json`
+config typescript in `tsconfig.json`
 ```json
 {
     "compilerOptions": {
@@ -51,6 +51,17 @@ in `tsconfig.json`
     }
 }
 ``` 
+config jest in `jest.config.ts` or `jest-e2e.config.ts`
+```js
+module.exports = {
+    // ...
+    moduleNameMapper: {
+        "@core/(.*)": "<rootDir>/src/$1"
+    },
+    collectCoverage: true,
+    collectCoverageFrom: ["src/**/*.ts", "!src/**/{index,enum}.ts"]
+}
+```
 
 
 ## Format on Save
